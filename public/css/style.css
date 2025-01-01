@@ -1,0 +1,225 @@
+ 
+    
+      /* font-family: "Plus Jakarta Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal; */
+      .lato-thin {
+        font-family: "Lato", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .lato-light {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .lato-regular {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .lato-bold {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .lato-black {
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .lato-thin-italic {
+        font-family: "Lato", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .lato-light-italic {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .lato-regular-italic {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .lato-bold-italic {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .lato-black-italic {
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+body{
+      display: flex;
+      flex-direction:column;
+      height:100vh;
+
+}
+.container{
+    flex:1;
+}
+
+.navbar{
+    height:4rem;
+    background:white;
+}
+.fa-compass{
+    color:rgb(236, 10, 85);
+    font-size:2rem;
+}
+.nav-link{
+    color:black !important;
+    font-weight:bold;
+}
+
+/* footer */
+
+footer{
+    height:6rem;
+    background:rgb(233, 234, 237);
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+}
+.f-socials-links,.f-company-name,.f-links{
+    width:100%;
+}
+.f-links a{
+    text-decoration:none;
+    color:#222222;
+}
+.f-links a:hover{
+    text-decoration:underline;
+}
+.fa-brands{
+    font-size:1.5rem;
+    margin:0.5rem 0.5rem 0 0;
+    border-radius:25px;
+    
+}
+
+/* main-content */
+.card-listing{
+    padding:0;
+    border:none !important;
+   
+}
+.card-listing img{
+  border-radius: 20px ;
+  width:100%;
+}
+.card-ancar{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity:0;
+}
+.card-img-overlay:hover{
+    opacity:0.4;
+    background:rgb(233, 234, 237);
+    border-radius: 25px;
+}
+
+/* Edit page */
+.btn{
+    background:rgb(236, 10, 85) !important;
+    color:white !important;
+
+}
+label{
+    font-weight:600;
+}
+/* show page */
+.show img{
+  border-radius: 20px ;
+  width:100%;
+}
+.show-btns{
+  display:flex;
+  
+}
+.show-btns form button {
+  margin:0 1rem 1rem 0;
+}
+.delete-btn{
+  background:black !important;
+}
+.title{
+  font-weight:700;
+  font-size:30px;
+}
+
+/* Map */
+#map {
+   height:300px;
+   width:80vh;
+   margin-bottom:20px;
+ }
+
+ /* below the index */
+ #filters{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+.filter{
+  text-align: center;
+  margin-right:2rem;
+  margin-top:1rem;
+  opacity:0.6;
+}
+.filter a {
+  font-size:15px;
+  text-decoration: none;
+  color:black;
+}
+.filter:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.text_info{
+  display:none;
+}
+.toogleSwitch{
+  border:2px solid rgb(214, 206, 206);
+  border-radius: 15px;
+  height:50px;
+  padding:0.5rem;
+}
+
+/* Search bar  */
+
+/* .search-slot {
+  margin: 0 0 0 25rem;
+}
+
+.search-btn {
+  border-radius: 25px;
+}
+
+.search-btn i {
+  display: inline;
+  margin-right: 0.2rem;
+  padding: 0.5rem;
+}
+
+.search-inp {
+  border-radius: 25px;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+} */

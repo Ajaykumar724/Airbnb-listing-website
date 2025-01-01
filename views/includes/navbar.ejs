@@ -1,0 +1,94 @@
+<style>
+  .search-slot {
+    margin: 0 0 0 17rem;
+  }
+
+  .search-btn ,.location {
+    border-radius: 25px !important;
+  }
+
+  .search-btn i {
+    display: inline;
+    margin-right: 0.2rem;
+    padding: 0.5rem;
+  }
+
+  .search-inp {
+    border-radius: 25px !important;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
+</style>
+
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/listings">Explore</a>
+      </div>
+      <div class="search-slot">
+        <form method="GET" action="/listings/search" class="d-flex" role="search">
+          <div class="input-group mt-3 mb-3">
+            <select class="form-select form-select-sm location me-3" name="location" aria-label="Small select example">
+              <option value="" selected>Location</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="BR">Bihar</option>
+              <option value="CT">Chhattisgarh</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="HP">Himachal Pradesh</option>
+              <option value="JK">Jammu and Kashmir</option>
+              <option value="Goa">Goa</option>
+              <option value="JH">Jharkhand</option>
+              <option value="KA">Karnataka</option>
+              <option value="KL">Kerala</option>
+              <option value="MP">Madhya Pradesh</option>
+              <option value="MH">Maharashtra</option>
+              <option value="MN">Manipur</option>
+              <option value="ML">Meghalaya</option>
+              <option value="MZ">Mizoram</option>
+              <option value="NL">Nagaland</option>
+              <option value="OR">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="RJ">Rajasthan</option>
+              <option value="SK">Sikkim</option>
+              <option value="TN">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+              <option value="Daman and Diu">Daman and Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Puducherry">Puducherry</option>
+            </select>
+            <input class="form-control me-2 search-inp" name="search" id="search" type="search"
+              placeholder="Search destinations" aria-label="Search">
+            <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+          </div>
+
+        </form>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        <%if(!currUser){%>
+          <a class="nav-link " aria-current="page" href="/signup"><b>Sign in</b></a>
+          <a class="nav-link" href="/login"><b>Login</b></a>
+          <%}%>
+            <%if(currUser){%>
+              <a class="nav-link" href="/logout"><b>Logout</b></a>
+              <%}%>
+      </div>
+    </div>
+  </div>
+</nav>

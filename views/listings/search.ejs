@@ -1,0 +1,33 @@
+<% layout("layouts/boilerplate.ejs")%>
+
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
+
+    <% for(listing of searchedListing){%>
+       <a class="card-ancar" href="/listings/<%=listing._id%>">
+        <div class="card-listing card col" >
+            <img src=" <%=listing.image.url%>" class="card-img-top" style="height: 20rem;" alt="listings_image">
+            <div class="card-img-overlay"></div>
+            <div class="card-body">
+              <p class="card-text"><b> <%=listing.title%></b><br>
+                &#8377; <%= listing.price.toLocaleString("en-in")%>/night<h7 class="text_info">&nbsp;&nbsp; +18%GST
+                </h7>
+            </p>
+            </div>
+          </div>
+       </a>
+       <%}%>
+       <% for(listing of searchedListing2){%>
+        <a class="card-ancar" href="/listings/<%=listing._id%>">
+         <div class="card-listing card col" >
+             <img src=" <%=listing.image.url%>" class="card-img-top" style="height: 20rem;" alt="listings_image">
+             <div class="card-img-overlay"></div>
+             <div class="card-body">
+               <p class="card-text"><b> <%=listing.title%></b><br>
+                 &#8377; <%= listing.price.toLocaleString("en-in")%>/night<h7 class="text_info">&nbsp;&nbsp; +18%GST
+                 </h7>
+             </p>
+             </div>
+           </div>
+        </a>
+        <%}%>
+</div>
