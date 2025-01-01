@@ -20,7 +20,7 @@ module.exports.showListing = async (req,res)=>{
        req.flash("error","Listing you resquested was deteled");
        res.redirect("/listings");
     }
-    res.render("listings/show.ejs",{listing})
+    res.render("listings/show.ejs",{ listing, mapToken: process.env.MAP_TOKEN })
 };
 
 module.exports.createListing = async (req,res,next)=>{
